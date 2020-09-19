@@ -23,7 +23,7 @@ Route::get('/welcome', function () {
 });
 
 Route::get('/', function(){
-  include __DIR__ . '/../database/temporary_DB/data.php';
+  require __DIR__ . '/../database/temporary_DB/data.php';
 
 
   // $myData =

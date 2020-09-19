@@ -14,10 +14,6 @@
 
 
 
-      <img style="width: 500px;" src="{{ asset('img/q.png')}}" alt="">
-
-
-
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">

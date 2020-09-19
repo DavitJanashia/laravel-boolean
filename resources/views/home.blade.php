@@ -3,9 +3,6 @@
 
 
 
-
-
-
 @section('section1')
   <h2>LE LUNGHE</h2>
   {{-- <h3>{{$value['titolo']}}</h3> --}}

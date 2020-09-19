@@ -15,14 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/welcome', function () {
     return view('welcome');
-});
+}) -> name('welcome');
 
 Route::get('/', function(){
   require __DIR__ . '/../database/temporary_DB/data.php';
   return view('home', compact('data'));
-}) -> name('/root');
+}) -> name('root');
 
 Route::get('/home', function(){
   require __DIR__ . '/../database/temporary_DB/data.php';
   return view('home', compact('data'));
-});
+}) -> name('home');

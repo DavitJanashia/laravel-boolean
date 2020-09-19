@@ -1,0 +1,10 @@
+$bg_primary: lightgreen;
+
+// .#{$bg_primary}{ //es metodic sheidzleba gamoiyeno
+//   color: blue;
+// }
+
+// DEBUG:
+.testVariables{
+  background-color: $bg_primary;
+}

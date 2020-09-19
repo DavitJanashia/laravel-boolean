@@ -1,10 +1,20 @@
 //
+@import "_variables.scss";//tanmimdevroba ese unda iyos.. headeris importi unda iyos dabla radgan specifikurad magas exeba
+@import "_common.scss";
+
 *{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   // DEBUG:
+  border:1px solid black;
+  padding: 5px;
 }
+
+@import "../views/partials/_navbar.scss";
+@import "../views/partials/_header.scss";
+@import "../views/partials/_main.scss";
+@import "../views/partials/_footer.scss";
 
 
 html, body {

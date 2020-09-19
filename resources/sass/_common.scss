@@ -1,0 +1,8 @@
+@mixin blueBack {
+  background-color: lightblue;
+}
+
+// DEBUG:
+.testCommon{
+  @include blueBack;
+}

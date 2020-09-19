@@ -12,6 +12,29 @@
     </head>
     <body>
       {{-- <img style="width: 500px;" src="{{ asset('img/q.png')}}" alt=""> --}}
+      <div class="testCommon">
+        Test Common
+      </div>
+
+      <div class="testVariables">
+        Test Variables
+      </div>
+
+      <div class="testNav">
+        Test Nav
+      </div>
+
+      <div class="testHead">
+        Test Head
+      </div>
+
+      <div class="testMain">
+        Test Main
+      </div>
+
+      <div class="testFoot">
+        Test Foot
+      </div>
 
       <h1>hello world</h1>
       @yield('section1')

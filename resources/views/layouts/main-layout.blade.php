@@ -12,31 +12,100 @@
     </head>
     <body>
       {{-- <img style="width: 500px;" src="{{ asset('img/q.png')}}" alt=""> --}}
-      <div class="testCommon">
-        Test Common
+      <header>
+        <div class="container">
+          <a class="logo-link" href="#">
+            <img id="header-logo" src="{{ asset('img/marchio-sito-test.png')}}" alt="Image not found">
+          </a>
+        </div>
+      </header>
+
+      <div id="navbar">
+        <div class="container">
+          <ul>
+            <li>
+              <a href="#">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Prodotti
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                News
+              </a>
+            </li>
+          </ul>
+        </div>
+
       </div>
 
-      <div class="testVariables">
-        Test Variables
-      </div>
+      <main>
+        <div class="container">
+          @yield('section1')
+          @yield('section2')
+          @yield('section3')
+        </div>
+      </main>
 
-      <div class="testNav">
-        Test Nav
-      </div>
+      <footer>
+        <div class="container">
+          <div class="foot-column">
+            <a class="logo-link" href="#">
+              <img id="footer-logo" src="{{ asset('img/marchio-sito-test.png')}}" alt="Image not found">
+            </a>
+          </div>
 
-      <div class="testHead">
-        Test Head
-      </div>
+          <div class="foot-column">
+            <h3>PASTIFICIO</h3>
+            <ul>
+              <li><a href="#">Il Pasti cio</a></li>
+              <li><a href="#">Grano</a></li>
+              <li><a href="#">decorticato a</a></li>
+              <li><a href="#">pietra</a></li>
+              <li><a href="#">Il Molise c’è</a></li>
+              <li><a href="#">Filiera Integrata</a></li>
+              <li><a href="#">100 anni di pasta</a></li>
+              <li><a href="#">Sartoria della</a></li>
+              <li><a href="#">pasta</a></li>
+              <li><a href="#">Spaghetto</a></li>
+              <li><a href="#">Quadrato</a></li>
+              <li><a href="#">Le Persone</a></li>
+            </ul>
+          </div>
 
-      <div class="testMain">
-        Test Main
-      </div>
+          <div class="foot-column">
+            <h3>PRODOTTI</h3>
+            <ul>
+              <li><a href="#">Le Classiche</a></li>
+              <li><a href="#">Le Integrali</a></li>
+              <li><a href="#">Le Speciali</a></li>
+              <li><a href="#">Le Biologiche</a></li>
+              <li><a href="#">Le Gluten-Free</a></li>
+              <li><a href="#">Le Semole</a></li>
+            </ul>
+          </div>
 
-      <div class="testFoot">
-        Test Foot
-      </div>
+          <div class="foot-column">
+            <h3>COLLEZIONE DA CHEF</h3>
+            <ul>
+              <li><a href="#">Collezione da</a></li>
+              <li><a href="#">Chef</a></li>
+              <li><a href="#">Grandi Cucine</a></li>
+              <li><a href="#">Biologiche</a></li>
+              <li><a href="#">Quadrate</a></li>
+            </ul>
+          </div>
 
-      <h1>hello world</h1>
-      @yield('section1')
+
+
+        </div>
+      </footer>
+
     </body>
 </html>

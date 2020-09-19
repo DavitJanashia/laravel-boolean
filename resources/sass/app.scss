@@ -7,8 +7,8 @@
   padding: 0;
   margin: 0;
   // DEBUG:
-  border:1px solid black;
-  padding: 5px;
+  // border:1px solid black;
+  // padding: 5px;
 }
 
 @import "../views/partials/_navbar.scss";
@@ -22,8 +22,24 @@ html, body {
     color: #636b6f;
     font-family: 'Nunito', sans-serif;
     font-weight: 200;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+.pic-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.container{
+  width: 85%;
+  height: 100%;
+  margin: auto;
 }
 
 .full-height {

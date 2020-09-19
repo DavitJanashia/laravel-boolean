@@ -10,24 +10,89 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: 1px solid black;
-  padding: 5px;
 }
 
-.testNav {
-  color: orange;
+div#navbar div.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.testHead {
-  color: red;
+div#navbar div.container ul {
+  list-style: none;
+  display: flex;
 }
 
-.testMain {
-  color: blue;
+div#navbar div.container ul li {
+  padding: 0 40px;
 }
 
-.testFoot {
-  color: green;
+div#navbar div.container ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+header div.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+header div.container a.logo-link {
+  display: inline-block;
+  height: 200px;
+}
+
+header div.container a.logo-link img#header-logo {
+  height: 100%;
+}
+
+main div.container {
+  padding: 110px 0;
+}
+
+main div.container h2 {
+  font-size: 50px;
+  color: #002d75;
+}
+
+main div.container div.pic-box {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+main div.container div.pic-box img {
+  height: 170px;
+  padding: 7px;
+}
+
+footer div.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer div.container div.foot-column {
+  width: calc(100% / 4);
+  min-width: 260px;
+}
+
+footer div.container div.foot-column a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+}
+
+footer div.container div.foot-column h3 {
+  color: black;
+}
+
+footer div.container div.foot-column img {
+  height: 140px;
 }
 
 html,
@@ -36,8 +101,24 @@ body {
   color: #636b6f;
   font-family: "Nunito", sans-serif;
   font-weight: 200;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.pic-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.container {
+  width: 85%;
+  height: 100%;
+  margin: auto;
 }
 
 .full-height {

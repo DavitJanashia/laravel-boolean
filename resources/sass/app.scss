@@ -11,20 +11,21 @@
   // padding: 5px;
 }
 
+html, body {
+  background-color: #fff;
+  color: #636b6f;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  min-height: 100vh;
+  margin: 0;
+}
+
 @import "../views/partials/_navbar.scss";
 @import "../views/partials/_header.scss";
 @import "../views/partials/_main.scss";
 @import "../views/partials/_footer.scss";
 
 
-html, body {
-    background-color: #fff;
-    color: #636b6f;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 200;
-    min-height: 100vh;
-    margin: 0;
-}
 
 ul{
   list-style: none;

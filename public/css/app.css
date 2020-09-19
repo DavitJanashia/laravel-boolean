@@ -1,14 +1,16 @@
-.testVariables {
-  background-color: lightgreen;
-}
-
-.testCommon {
-  background-color: lightblue;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #636b6f;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  min-height: 100vh;
   margin: 0;
 }
 
@@ -93,16 +95,6 @@ footer div.container div.foot-column h3 {
 
 footer div.container div.foot-column img {
   height: 140px;
-}
-
-html,
-body {
-  background-color: #fff;
-  color: #636b6f;
-  font-family: "Nunito", sans-serif;
-  font-weight: 200;
-  min-height: 100vh;
-  margin: 0;
 }
 
 ul {

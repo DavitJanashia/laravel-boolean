@@ -18,11 +18,13 @@ Route::get('/welcome', function () {
 }) -> name('welcome');
 
 Route::get('/', function(){
-  require __DIR__ . '/../database/temporary_DB/data.php';
+  // require __DIR__ . '/../database/temporary_DB/data.php'; //la mia versione
+  $data = config('temporary_DB_config.data');
   return view('home', compact('data'));
 }) -> name('root');
 
 Route::get('/home', function(){
-  require __DIR__ . '/../database/temporary_DB/data.php';
+  // require __DIR__ . '/../database/temporary_DB/data.php'; //la mia versione
+  $data = config('temporary_DB_config.data');
   return view('home', compact('data'));
 }) -> name('home');
